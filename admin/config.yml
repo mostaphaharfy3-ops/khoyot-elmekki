@@ -1,24 +1,24 @@
 backend:
-      name: github
-      repo: mostaphaharfy3-ops/khoyot-elmekki
-      branch: main
+  name: github
+  repo: mostaphaharfy3-ops/khoyot-elmekki
+  branch: main
 
-    media_folder: "images"
-    public_folder: "/images"
+media_folder: "images"
+public_folder: "/images"
 
-    collections:
-      - name: "posts"
-        label: "المقالات"
-        folder: "_posts"
-        create: true
-        slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
-        fields:
-          - label: "العنوان"
-            name: "title"
-            widget: "string"
-          - label: "التاريخ"
-            name: "date"
-            widget: "datetime"
-          - label: "المحتوى"
-            name: "body"
-            widget: "markdown"
+collections:
+    - name: "posts"
+    label: "المقالات"
+    folder: "_posts"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+            - label: "العنوان"
+        name: "title"
+        widget: "string"
+            - label: "التاريخ"
+        name: "date"
+        widget: "datetime"
+            - label: "المحتوى"
+        name: "body"
+        widget: "markdown"
